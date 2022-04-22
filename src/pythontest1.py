@@ -11,6 +11,11 @@ class MyTest(unittest.TestCase):
         self.assertTrue(is_even(6))
         self.assertFalse(is_even(1))
         self.assertEqual(is_even(0), True)
+    def test_lstrip(self): #testing for left stripping
+        self.assertEqual('   hello '.lstrip(),'hello ')
+    def test_isupper(self): #testing for isupper
+        self.assertTrue('HELLO'.isupper())
+        self.assertFalse('HELlO'.isupper())
 
 if __name__ == '__main__':
     unittest.main()
